@@ -1,0 +1,245 @@
+
+.logoimage{
+    border-radius: 5px;
+}
+
+body {
+    display: flex; 
+    flex-direction: column;
+    padding-top: 0px;
+    min-height: 100vh;  
+  }
+
+.nav-link {
+    display: inline-block;
+    margin-left: 80px;
+    padding-top: 15px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #444;
+    position: relative;
+    top: 0;
+    width: 0%
+}
+
+nav a:hover::before {
+    width: 100%
+}
+
+.navbar-toggler {
+  color: white;
+
+}
+
+
+video {
+  width: 100%;
+  height: calc(85vh - 50px);
+  object-fit: cover;
+}
+
+  footer {
+    display: flex;  
+    justify-content: center; 
+    background-color: white;
+    height: 50px;
+    padding: 10px;
+    float: right;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+  }
+  footer a {
+    margin: 5px;
+    text-decoration: none;
+  }
+  .social-icon {
+    display: inline-flex;  /* allows use of "justify-content" and "align-items" properties */
+    width: 25px;
+    height: 25px;
+    color: rgba(255, 217, 0, 0.822);
+    background-color: black;
+    justify-content: center;  
+    align-items: center;  
+    border-radius: 50%;  
+  }
+  .social-icon:hover {
+    color: rgba(255, 0, 0, 0.822);  
+  }
+
+main{
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1140px;
+  margin: auto;
+  position: relative;
+  max-height: 1140px;
+}
+
+.sections{
+  height: 75vh;
+  padding: 30px 15px;
+  background-color: black;
+  float: left;
+  width: 100%;
+}
+
+.sections .card{
+  width: 33.33%;
+  max-height: 65vh;
+  float: right;
+  padding: 5px;
+  background-color: black;
+}
+
+.sections .card .box {
+  max-height: 75vh;
+  padding: 15px;
+  background-color: white ;
+  border-radius: 25px;
+  transition: margin 1s ease, box-shadow 1s ease;
+}
+
+.sections .card .box:hover{
+  margin-top: -20px;
+  box-shadow: 0px 0px 40px gray;
+}
+
+.sections .card .box h4{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 0px 10px;
+  color: black;
+  text-align: center;
+  font-weight: 700;
+}
+
+.sections .card .box p{
+  color: black; 
+  max-height: 60vh;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+  padding: 0px 0px;
+}
+
+/*responsive*/
+@media(max-width: 991px){
+  .team .card{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container-helpus {
+  height: 75vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.content {
+  height: 70vh;
+  width: 60vw;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6rem;
+}
+
+.content h1{
+  color: black;
+  margin-bottom: 2rem;
+}
+
+label {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px #99aaab;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  height: 20vh;
+}
+
+input::placeholder
+textarea::placeholder{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.button-helpus {
+  padding: 0.2rem 2rem;
+  margin: 0.6rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background: black;
+  box-shadow: 3px 3px 6px #99aaab;
+  transition: all 0.6s ease;
+}
+
+button:hover{
+  background: black;
+  transform: scale(1.1);
+}
+
+
+/* Responsive view */
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 90vw;
+    padding: 0 2rem;
+  }
+}
